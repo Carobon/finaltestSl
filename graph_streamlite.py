@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 
 import streamlit as st
 
+##
+
 st.title('Analyse de corrélation et de distribution dataset voitures')
 
 link ="C:/Users/33668/Project_2/quete_streamlit/new_df_cars.csv"
