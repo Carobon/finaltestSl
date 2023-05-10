@@ -9,8 +9,18 @@ import streamlit as st
 
 st.title('Analyse de corrélation et de distribution dataset voitures')
 
-link ="C:/Users/33668/Project_2/quete_streamlit/new_df_cars.csv"
-df_cars = pd.read_csv(link)
+import pandas as pd
+
+# Assuming the CSV file is in the same directory as the script
+csv_filename = "new_df_cars.csv"  # Replace "filename.csv" with the actual filename
+# Construct the relative path to the CSV file
+csv_path = "./" + csv_filename
+# Read the CSV file using the relative path
+df_cars = pd.read_csv(csv_path)
+
+
+# link ="C:/Users/33668/Project_2/quete_streamlit/new_df_cars.csv"
+# df_cars = pd.read_csv(link)
 
 def filter_by_continent(continent):
     filtered_data = data[data["Continent"] == continent]
